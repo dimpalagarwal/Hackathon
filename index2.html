@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EvolveX Profile</title>
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh; /* Make sure it takes the full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, #121212, #31135E);
+    color: white;
+}
+
+/* Container */
+.container {
+    width: 80%;
+    max-width: 600px;
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: cyan;
+}
+
+.back-arrow {
+    cursor: pointer;
+    font-size: 24px;
+}
+
+/* Profile Section */
+.profile-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%; /* Makes sure it's a perfect circle */
+    background: white;
+    padding: 5px;
+    object-fit: cover; /* Ensures the image doesn't stretch */
+}
+
+.name {
+    color: cyan;
+    margin-top: 10px;
+}
+
+.form-section {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Input Fields */
+.row {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.input-box {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+input {
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <span class="back-arrow">&#8592;</span>
+            <h1 class="title">EvolveX</h1>
+        </header>
+        <div class="profile-section">
+            <img src="profile.webp" alt="Profile Picture" class="profile-pic">
+            <h2 class="name"><input type="text" placeholder="Enter your name"></h2>
+        </div>
+        <div class="form-section">
+            <div class="row">
+                <div class="input-box">
+                    <label>Email:</label>
+                    <input type="text" placeholder="Enter your email">
+                </div>
+                <div class="input-box">
+                    <label>Phone No.:</label>
+                    <input type="text" placeholder="Enter your phone number">
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-box">
+                    <label>Education:</label>
+                    <input type="text" placeholder="education...">
+                </div>
+                <div class="input-box">
+                    <label>Work Experience:</label>
+                    <input type="text" placeholder="work experience...">
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-box">
+                    <label>Skills and Certifications:</label>
+                    <input type="text" placeholder="skills...">
+                </div>
+                <div class="input-box">
+                    <label>Resume Upload:</label>
+                    <input type="file">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
